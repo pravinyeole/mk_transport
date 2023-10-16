@@ -32,4 +32,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/quotaion_view', 'HomeController@quotaion_view');
+Route::get('/view_vehicle_type', 'HomeController@view_vehicle_type');
+Route::any('/submit_vehical_type', 'HomeController@submit_vehical_type');
 

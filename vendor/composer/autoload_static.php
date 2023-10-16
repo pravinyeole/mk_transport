@@ -35,12 +35,17 @@ class ComposerStaticInit38c5301cac0d604d667e281de18fdd5e
         'c72349b1fe8d0deeedd3a52e8aa814d8' => __DIR__ . '/..' . '/mockery/mockery/library/helpers.php',
         'ce9671a430e4846b44e1c68c7611f9f5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '0b47d6d4a00ca9112ba3953b49e7c9a4' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'v' => 
         array (
             'voku\\' => 5,
+        ),
+        'Y' => 
+        array (
+            'Yajra\\DataTables\\' => 17,
         ),
         'W' => 
         array (
@@ -177,6 +182,10 @@ class ComposerStaticInit38c5301cac0d604d667e281de18fdd5e
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'Yajra\\DataTables\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src',
         ),
         'Whoops\\' => 
         array (
@@ -515,6 +524,7 @@ class ComposerStaticInit38c5301cac0d604d667e281de18fdd5e
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\Qoute' => __DIR__ . '/../..' . '/app/Models/Qoute.php',
+        'App\\Models\\Vehicle_type' => __DIR__ . '/../..' . '/app/Models/Vehicle_type.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -5290,6 +5300,22 @@ class ComposerStaticInit38c5301cac0d604d667e281de18fdd5e
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+        'Yajra\\DataTables\\ApiResourceDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/ApiResourceDataTable.php',
+        'Yajra\\DataTables\\CollectionDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/CollectionDataTable.php',
+        'Yajra\\DataTables\\Contracts\\DataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Contracts/DataTable.php',
+        'Yajra\\DataTables\\Contracts\\Formatter' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Contracts/Formatter.php',
+        'Yajra\\DataTables\\DataTableAbstract' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/DataTableAbstract.php',
+        'Yajra\\DataTables\\DataTables' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/DataTables.php',
+        'Yajra\\DataTables\\DataTablesServiceProvider' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/DataTablesServiceProvider.php',
+        'Yajra\\DataTables\\EloquentDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/EloquentDataTable.php',
+        'Yajra\\DataTables\\Exceptions\\Exception' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Exceptions/Exception.php',
+        'Yajra\\DataTables\\Facades\\DataTables' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Facades/DataTables.php',
+        'Yajra\\DataTables\\Processors\\DataProcessor' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Processors/DataProcessor.php',
+        'Yajra\\DataTables\\Processors\\RowProcessor' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Processors/RowProcessor.php',
+        'Yajra\\DataTables\\QueryDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/QueryDataTable.php',
+        'Yajra\\DataTables\\Utilities\\Config' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Config.php',
+        'Yajra\\DataTables\\Utilities\\Helper' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Helper.php',
+        'Yajra\\DataTables\\Utilities\\Request' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Request.php',
         'voku\\helper\\ASCII' => __DIR__ . '/..' . '/voku/portable-ascii/src/voku/helper/ASCII.php',
     );
 

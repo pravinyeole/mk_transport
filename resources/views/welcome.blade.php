@@ -11,7 +11,7 @@
   
 
     <!-- Favicon -->
-    <link href="img/logo.png" rel="icon">
+    <link href="{{asset('img/logo.png')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,8 +45,8 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
-        <a href="#" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white"><img src="img/logo.png" alt="" style="width: 80px; height: auto;"> MK Transport Company</h2>
+        <a href="#" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="mb-2 text-white"><img src="{{asset('img/logo.png')}}" alt="" class="logo"></h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -149,7 +149,7 @@
             <div class="row g-5 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="{{asset('img/about.jpg')}}" style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
@@ -232,7 +232,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="img-fluid" src="{{asset('img/service-3.jpg')}}" alt="">
                         </div>
                         <h4 class="mb-3">Road Freight</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -242,7 +242,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                            <img class="img-fluid" src="{{asset('img/service-5.jpg')}}" alt="">
                         </div>
                         <h4 class="mb-3">Customs Clearance</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -252,7 +252,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                            <img class="img-fluid" src="{{asset('img/service-6.jpg')}}" alt="">
                         </div>
                         <h4 class="mb-3">Warehouse Solutions</h4>
                         <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -289,7 +289,7 @@
                 </div>
                 <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="{{asset('img/feature.jpg')}}" style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
@@ -368,7 +368,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c1.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c1.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Mahindra EPC Irrigation Limited</h5>
                         </div>
@@ -377,7 +377,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c2.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c2.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Garware Technical Fibres Limited</h5>
                         </div>
@@ -386,7 +386,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c3.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c3.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Tritech Disconnecters IND Pvt Ltd</h5>
                         </div>
@@ -395,7 +395,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c4.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c4.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Sahyadri Farms</h5>
                         </div>
@@ -405,7 +405,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c5.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c5.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Apras</h5>
                         </div>
@@ -414,7 +414,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c6.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c6.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Go Gas Limited</h5>
                         </div>
@@ -423,7 +423,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c7.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c7.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Popular Switchgears Pvt Ltd</h5>
                         </div>
@@ -432,7 +432,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c8.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c8.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Huphen Electromech</h5>
                         </div>
@@ -442,7 +442,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c9.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c9.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Hexagone Graphite</h5>
                         </div>
@@ -451,7 +451,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c10.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c10.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Epcos</h5>
                         </div>
@@ -460,7 +460,7 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/c11.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="{{asset('img/c11.jpg')}}" style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Dham Fasteners</h5>
                         </div>

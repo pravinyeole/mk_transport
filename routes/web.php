@@ -30,4 +30,6 @@ Route::post('/qoute', [App\Http\Controllers\WebController::class, 'qoute']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/quotaion_view', 'HomeController@quotaion_view');
+

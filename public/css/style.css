@@ -1,11 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF3E41;
+    --primary: #ef7f1a;
     --secondary: #51CFED;
     --light: #F8F2F0;
     --dark: #060315;
 }
-
+.bg-primary {
+    background-color: var(--primary) !important;
+}
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -71,6 +73,14 @@
 }
 
 /*** Navbar ***/
+.logo{
+	max-width:250px;
+    transition: all ease-in-out 300ms;
+}
+.has-sticky .logo{max-width:160px;}
+.navbar-expand-lg .navbar-nav{
+    height: 100%;
+}
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -88,6 +98,9 @@
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -108,7 +121,8 @@
 
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
-    height: 75px;
+    height: auto;
+    max-height: 120px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -117,17 +131,20 @@
 }
 
 .navbar-light.sticky-top {
-    top: -100px;
+    top: -130px;
     transition: .5s;
+    align-items: normal;
 }
-
+.text-primary {
+    color: #ef7f1a !important;
+}
 @media (min-width: 992px) {
     .navbar-light .navbar-nav .nav-link::before {
         position: absolute;
         content: "";
         width: 0;
         height: 5px;
-        top: -6px;
+        top: -5px;
         left: 50%;
         background: #FFFFFF;
         transition: .5s;

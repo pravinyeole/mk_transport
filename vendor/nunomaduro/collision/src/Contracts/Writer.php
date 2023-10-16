@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 /**
  * This file is part of Collision.
  *
@@ -17,7 +15,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Whoops\Exception\Inspector;
 
 /**
- * @internal
+ * This is the Collision Writer contract.
+ *
+ * @author Nuno Maduro <enunomaduro@gmail.com>
  */
 interface Writer
 {
@@ -25,7 +25,8 @@ interface Writer
      * Ignores traces where the file string matches one
      * of the provided regex expressions.
      *
-     * @param  string[]  $ignore the regex expressions
+     * @param string[] $ignore the regex expressions
+     *
      * @return \NunoMaduro\Collision\Contracts\Writer
      */
     public function ignoreFilesIn(array $ignore): Writer;

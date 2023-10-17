@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Add Vehicle Type') }}</div>
+                <div class="card-header">{{ __('Add Material Weight') }}</div>
                     <div class="card-body">
                         @if (\Session::has('success'))
                             <div class="alert alert-success">
@@ -16,11 +16,11 @@
                                 </ul>
                             </div>
                         @endif
-                        <form method="post" action="{{url('/submit_vehical_type')}}"  class="form-inline">
+                        <form method="post" action="{{url('/submit_material_weight')}}"  class="form-inline">
                             @csrf
                             <div class="form-group mb-2">
-                                <label for="staticEmail2" class="sr-only">Vehicle Type</label>
-                                <input type="text" name="name" class="form-control" Placeholder="Please Enter Vehicle Type" require/>
+                                <label for="staticEmail2" class="sr-only">Material Weight</label>
+                                <input type="text" name="name" class="form-control" Placeholder="Please Enter Material Weight" require/>
                             </div>
                             <button type="submit" class="btn btn-primary mb-2" style="margin-left:5px;">Save</button>
                         </form>
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-            <div class="card">
+            <div class="card" style="margin-top:5%">
                 <div class="card-header">{{ __('List Vehicle Type') }}</div>
                     <div class="card-body">    
 
@@ -56,7 +56,7 @@
     var table = $('.data-table').DataTable({
         processing: true,
         serverSide: true,
-        ajax: "{{ url('view_vehicle_type') }}",
+        ajax: "{{ url('view_material_weight') }}",
         columns: [
             {data: 'DT_RowIndex', name: 'DT_RowIndex'},
             {data: 'name', name: 'name'},

@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -33,8 +33,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a href="index3.html" class="navbar-brand">
-                    <img src="{{asset('img/logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                <a href="{{url('/home')}}" class="navbar-brand">
+                    <img src="{{asset('img/logo.png')}}" alt="MK Trasnsport Logo" class="brand-image img-circle elevation-3"
                     style="width: 15%" >
                     <span class="brand-text font-weight-light">MK Trasnsport</span>
                 </a>

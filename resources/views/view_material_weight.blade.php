@@ -30,6 +30,13 @@
         </div>
             <div class="card" style="margin-top:5%">
                 <div class="card-header">{{ __('List Vehicle Type') }}</div>
+                    @if (\Session::has('alert'))
+                        <div class="alert alert-danger">
+                            <ul>
+                                <li>{!! \Session::get('alert') !!}</li>
+                            </ul>
+                        </div>
+                    @endif
                     <div class="card-body">    
 
                         <table class="table table-bordered data-table">

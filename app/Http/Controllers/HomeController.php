@@ -26,7 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $Vehicle_type = Vehicle_type::get();
+        $Material_weight = Material_weight::get();
+        return view('home',compact('Vehicle_type','Material_weight'));
     }
 
     public function quotaion_view()
@@ -42,7 +44,7 @@ class HomeController extends Controller
                     ->addIndexColumn()
                     ->addColumn('action', function($row){
    
-                           $btn = '<a href="javascript:void(0)" class="edit btn btn-primary btn-sm">View</a>';
+                            $btn = '<a href="/delete_type/'.$row->id.'/vehicle_type" class="edit btn btn-danger btn-sm">Delete</a>';
      
                             return $btn;
                     })
@@ -59,7 +61,7 @@ class HomeController extends Controller
                     ->addIndexColumn()
                     ->addColumn('action', function($row){
    
-                           $btn = '<a href="javascript:void(0)" class="edit btn btn-primary btn-sm">View</a>';
+                            $btn = '<a href="/delete_type/'.$row->id.'/material_weight" class="edit btn btn-danger btn-sm">Delete</a>';
      
                             return $btn;
                     })
@@ -78,5 +80,18 @@ class HomeController extends Controller
     {
         Material_weight::Create(['name'=>ucfirst(strtolower($request->name))]);
         return redirect()->back()->with('success', 'Vehical Type Add successfully.');  
+    }
+
+    public function delete_type($id,$type)
+    {
+        if($type == 'material_weight')
+        {
+            Material_weight::where('id',$id)->delete();
+        }
+        else
+        {
+            Vehicle_type::where('id',$id)->delete();
+        }
+        return redirect()->back()->with('alert', 'Deleted successfully.');
     }
 }
